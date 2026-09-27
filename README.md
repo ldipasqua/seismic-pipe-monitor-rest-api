@@ -17,6 +17,12 @@ Com esta interface, o usuário é capaz de:
 ## Arquitetura do Seismic Pipe Monitor
 ![Arquitetura do Seismic Pipe Monitor](/img/Seismic-pipe-monitor-arquitetura.png)
 
+
+A API Seismic Pipe Monitor conecta com a API externa pública da [USGS](https://earthquake.usgs.gov/fdsnws/event/1/) (United States Geological Survey) para obter informações sobre terremotos.
+![Arquitetura do Seismic Pipe Monitor](/img/img20.png)
+
+Com esta API a requisição HTTP é tipo GET e recebe parâmetros como: magnitude mínima igual a 2.0, data do terremoto até 15 días antes da requisição, latitude, longitude e máximo raio em km.
+
 ---
 
 ## Instalação
