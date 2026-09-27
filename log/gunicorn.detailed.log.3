@@ -1,0 +1,57 @@
+[2026-09-27 16:17:25,025] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:17:26,650] INFO 172.18.0.1 - - [27/Sep/2026 16:17:26] "GET /pipelines HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:17:33,163] INFO 172.18.0.1 - - [27/Sep/2026 16:17:33] "GET /pipelines HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:18:33,537] INFO Adicionando pipeline 'Gasoduto Colombiano' à base de dados - call_trace=/app/app.py L116 
+[2026-09-27 16:18:33,591] INFO Adicionado pipeline com sucesso: #2 - Gasoduto Colombiano - call_trace=/app/app.py L143 
+[2026-09-27 16:18:33,599] INFO 172.18.0.1 - - [27/Sep/2026 16:18:33] "POST /pipeline HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:18:35,150] INFO Buscando sismos na API do USGS (Lat: 4.208432280293456, Lon: -76.07160795437254 - call_trace=/app/app.py L39  
+[2026-09-27 16:18:36,096] INFO Total recebido da API do USGS: 39 - call_trace=/app/app.py L63  
+[2026-09-27 16:18:36,100] INFO Busca concluída. Sismos encontrados no raio do duto: 39 - call_trace=/app/app.py L101 
+[2026-09-27 16:18:36,106] INFO 172.18.0.1 - - [27/Sep/2026 16:18:36] "GET /earthquake/usgs?latitude=4.208432280293456&longitude=-76.07160795437254 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:19:32,406] INFO 172.18.0.1 - - [27/Sep/2026 16:19:32] "OPTIONS /pipeline?id=${id} HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:19:32,412] INFO Atualizando pipeline 2 - call_trace=/app/app.py L204 
+[2026-09-27 16:19:32,413] INFO sesion iniciada - call_trace=/app/app.py L207 
+[2026-09-27 16:19:32,416] INFO pipeline encontrado - call_trace=/app/app.py L211 
+[2026-09-27 16:19:32,418] INFO geom atualizado - call_trace=/app/app.py L230 
+[2026-09-27 16:19:32,440] INFO commit realizado - call_trace=/app/app.py L233 
+[2026-09-27 16:19:32,442] INFO Pipeline 2 atualizado com sucesso! - call_trace=/app/app.py L235 
+[2026-09-27 16:19:32,445] INFO 172.18.0.1 - - [27/Sep/2026 16:19:32] "PUT /pipeline?id=${id} HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:19:40,568] INFO 172.18.0.1 - - [27/Sep/2026 16:19:40] "OPTIONS /pipeline?id=2 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:19:40,574] INFO Deletando dados sobre o duto #2 - call_trace=/app/app.py L170 
+[2026-09-27 16:19:40,580] INFO Deletado o duto 2 com sucesso! - call_trace=/app/app.py L182 
+[2026-09-27 16:19:40,582] INFO 172.18.0.1 - - [27/Sep/2026 16:19:40] "DELETE /pipeline?id=2 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 16:20:53,510] INFO 172.18.0.1 - - [27/Sep/2026 16:20:53] "GET /pipelines HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 13:30:09,972] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:09,972] INFO [33mPress CTRL+C to quit[0m - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:13,288] INFO 127.0.0.1 - - [27/Sep/2026 13:30:13] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:13,303] INFO 127.0.0.1 - - [27/Sep/2026 13:30:13] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:13,499] INFO 127.0.0.1 - - [27/Sep/2026 13:30:13] "GET /openapi/swagger/images/swagger.svg HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:22,701] INFO 127.0.0.1 - - [27/Sep/2026 13:30:22] "GET /pipelines HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:47,657] INFO Adicionando pipeline 'Bolivia' à base de dados - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L115 
+[2026-09-27 13:30:47,737] WARNING Tentativa de duplicidade: Pipeline 'Bolivia' já cadastrado na base! - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L127 
+[2026-09-27 13:30:47,739] INFO 127.0.0.1 - - [27/Sep/2026 13:30:47] "[31m[1mPOST /pipeline HTTP/1.1[0m" 409 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:30:48,958] INFO Buscando sismos na API do USGS (Lat: 2.5, Lon: -75.0 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L39  
+[2026-09-27 13:30:49,621] INFO Total recebido da API do USGS: 37 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L63  
+[2026-09-27 13:30:49,623] INFO Busca concluída. Sismos encontrados no raio do duto: 37 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L101 
+[2026-09-27 13:30:49,630] INFO 127.0.0.1 - - [27/Sep/2026 13:30:49] "GET /earthquake/usgs?latitude=2.5&longitude=-75 HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:33,627] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:33,628] INFO [33mPress CTRL+C to quit[0m - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:34,835] INFO 127.0.0.1 - - [27/Sep/2026 13:31:34] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:34,849] INFO 127.0.0.1 - - [27/Sep/2026 13:31:34] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:34,905] INFO 127.0.0.1 - - [27/Sep/2026 13:31:34] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:37,753] INFO 127.0.0.1 - - [27/Sep/2026 13:31:37] "GET /pipelines HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:55,768] INFO Adicionando pipeline 'Bolivia' à base de dados - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L115 
+[2026-09-27 13:31:55,825] WARNING Tentativa de duplicidade: Pipeline 'Bolivia' já cadastrado na base! - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L127 
+[2026-09-27 13:31:55,827] INFO 127.0.0.1 - - [27/Sep/2026 13:31:55] "[31m[1mPOST /pipeline HTTP/1.1[0m" 409 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:31:56,789] INFO Buscando sismos na API do USGS (Lat: 2.5, Lon: -75.0 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L39  
+[2026-09-27 13:31:57,607] INFO Total recebido da API do USGS: 37 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L63  
+[2026-09-27 13:31:57,609] INFO Busca concluída. Sismos encontrados no raio do duto: 37 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L101 
+[2026-09-27 13:31:57,612] INFO 127.0.0.1 - - [27/Sep/2026 13:31:57] "GET /earthquake/usgs?latitude=2.5&longitude=-75 HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 13:57:25,298] INFO 127.0.0.1 - - [27/Sep/2026 13:57:25] "GET /pipelines HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 15:07:58,752] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 15:07:58,754] INFO [33mPress CTRL+C to quit[0m - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 15:08:00,124] INFO 127.0.0.1 - - [27/Sep/2026 15:08:00] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 15:08:00,145] INFO 127.0.0.1 - - [27/Sep/2026 15:08:00] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  

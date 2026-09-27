@@ -55,10 +55,10 @@ Navegue até o diretório que contém o Dockerfile no terminal e seus arquivos d
 $ docker build -t seismic-pipe-monitor-rest-api .
 ```
 
-Uma vez criada a imagem, para executar o container basta executar, como administrador, seguinte o comando:
+Uma vez criada a imagem, para executar o container basta executar, como administrador, o seguinte comando:
 
 ```bash
-$ docker run -p 5000:5000 seismic-pipe-monitor-rest-api
+$ docker compose up --build
 ```
 
 Uma vez executando, para acessar a API, basta abrir o http://localhost:5000/#/ no navegador.

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:15-3.3
+    container_name: seismic-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: seismic_pipe_monitor
+    ports:
+      - "5432:5432" # Fixed: Expose standard Postgres port
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: seismic-api
+    environment:
+      # Fixed: Point to port 5432 instead of 5000
+      DATABASE_URL: postgresql+psycopg2://postgres:admin@db:5432/seismic_pipe_monitor?client_encoding=utf8
+    ports:
+      - "5000:5000" # Your Flask API will be accessible here
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./:/app
+
+volumes:
+  postgres_data:

@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+flask-openapi3
+Flask-SQLAlchemy
+pydantic
+SQLAlchemy>=1.4,<2.1
+SQLAlchemy-Utils>=0.41.0
+flask-restx
+flask-openapi3[swagger]
+psycopg2-binary==2.9.12
+geoalchemy2==0.14.1
+shapely
+requests

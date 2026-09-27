@@ -1,0 +1,49 @@
+[2026-09-27 16:10:29,935] INFO 127.0.0.1 - - [27/Sep/2026 16:10:29] "GET /pipelines HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 16:13:30,850] INFO Atualizando pipeline 1 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L203 
+[2026-09-27 16:13:30,850] INFO sesion iniciada - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L206 
+[2026-09-27 16:13:31,003] INFO pipeline encontrado - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L210 
+[2026-09-27 16:13:31,003] WARNING Tentativa de atualização de pipeline inexistente: Pipeline #'1' não encontrado na base! - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L214 
+[2026-09-27 16:13:31,013] INFO 127.0.0.1 - - [27/Sep/2026 16:13:31] "[33mPUT /pipeline HTTP/1.1[0m" 404 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 16:13:43,348] INFO 127.0.0.1 - - [27/Sep/2026 16:13:43] "GET /pipelines HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 16:14:27,583] INFO Atualizando pipeline 63 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L203 
+[2026-09-27 16:14:27,583] INFO sesion iniciada - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L206 
+[2026-09-27 16:14:27,649] INFO pipeline encontrado - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L210 
+[2026-09-27 16:14:27,649] INFO geom atualizado - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L229 
+[2026-09-27 16:14:27,678] INFO commit realizado - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L232 
+[2026-09-27 16:14:27,684] INFO Pipeline 63 atualizado com sucesso! - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L234 
+[2026-09-27 16:14:27,684] INFO 127.0.0.1 - - [27/Sep/2026 16:14:27] "PUT /pipeline HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 16:16:59,989] INFO Deletando dados sobre o duto #1 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L169 
+[2026-09-27 16:16:59,995] WARNING Erro ao deletar o duto 1: O duto não foi encontrado na base - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L186 
+[2026-09-27 16:16:59,997] INFO 127.0.0.1 - - [27/Sep/2026 16:16:59] "[33mDELETE /pipeline?id=1 HTTP/1.1[0m" 404 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 16:17:02,368] INFO Deletando dados sobre o duto #63 - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L169 
+[2026-09-27 16:17:02,378] INFO Deletado o duto 63 com sucesso! - call_trace=C:\Users\Laura Di Pasqua\OneDrive\Documentos\Posgraduacao\Sprint_Arquitetura_de_software\mvp\seismic-pipe-monitor\rest_api\app.py L181 
+[2026-09-27 16:17:02,378] INFO 127.0.0.1 - - [27/Sep/2026 16:17:02] "DELETE /pipeline?id=63 HTTP/1.1" 200 - - call_trace=C:\Lauradipasqua\anaconda3\envs\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2026-09-27 19:29:03,483] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000 - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:03,487] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:04,457] INFO 172.19.0.1 - - [27/Sep/2026 19:29:04] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:04,465] INFO 172.19.0.1 - - [27/Sep/2026 19:29:04] "[32mGET /openapi HTTP/1.1[0m" 308 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:04,480] INFO 172.19.0.1 - - [27/Sep/2026 19:29:04] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:04,562] INFO 172.19.0.1 - - [27/Sep/2026 19:29:04] "GET /openapi/swagger/images/swagger.svg HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,546] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,572] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "GET /openapi/swagger/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,575] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "GET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,578] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "GET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,719] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:05,746] INFO 172.19.0.1 - - [27/Sep/2026 19:29:05] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:29:11,086] INFO 172.19.0.1 - - [27/Sep/2026 19:29:11] "GET /pipelines HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:46,490] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000 - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:46,496] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:49,951] INFO 172.18.0.1 - - [27/Sep/2026 19:30:49] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:49,966] INFO 172.18.0.1 - - [27/Sep/2026 19:30:49] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:49,990] INFO 172.18.0.1 - - [27/Sep/2026 19:30:49] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:50,906] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:50,934] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "[36mGET /openapi/swagger/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:50,937] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:50,939] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:30:51,083] INFO 172.18.0.1 - - [27/Sep/2026 19:30:51] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
