@@ -47,3 +47,4 @@
 [2026-09-27 19:30:50,937] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
 [2026-09-27 19:30:50,939] INFO 172.18.0.1 - - [27/Sep/2026 19:30:50] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
 [2026-09-27 19:30:51,083] INFO 172.18.0.1 - - [27/Sep/2026 19:30:51] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
+[2026-09-27 19:31:01,863] INFO 172.18.0.1 - - [27/Sep/2026 19:31:01] "GET /pipelines HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.12/site-packages/werkzeug/_internal.py L97  
